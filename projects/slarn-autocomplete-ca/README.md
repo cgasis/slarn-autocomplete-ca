@@ -1,7 +1,6 @@
-# release notes
+# release notes 0.0.8
 
-added validation on autoCompleteInput
-`this.autocompleteInput.nativeElement !== undefined`
+Added undefined check for `this.autocompleteInput`
 
 # SlarnAutocompleteCa
 

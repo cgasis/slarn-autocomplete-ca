@@ -26,6 +26,10 @@
       "slarn-autocomplete-ca": [
         "dist/slarn-autocomplete-ca/slarn-autocomplete-ca",
         "dist/slarn-autocomplete-ca"
+      ],
+      "angular9-signaturepad": [
+        "dist/angular9-signaturepad/angular9-signaturepad",
+        "dist/angular9-signaturepad"
       ]
     }
   },

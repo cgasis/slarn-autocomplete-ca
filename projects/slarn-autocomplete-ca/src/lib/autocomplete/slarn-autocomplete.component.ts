@@ -147,8 +147,7 @@ export class SlarnAutocompleteComponent implements OnInit, AfterViewInit, Contro
   /**
    * Clear autocomplete selection
    */
-  clearAutocomplete() {
-    console.log('this.autocompleteInput: ', this.autocompleteInput)
+  clearAutocomplete() { 
     if(this.autocompleteInput !== undefined) {
       this.autocompleteInput.nativeElement.value = '';
     } 
@@ -229,7 +228,9 @@ export class SlarnAutocompleteComponent implements OnInit, AfterViewInit, Contro
       data.forEach(item => {
         if (item[this.configuration.key] == this._selectedId) {
           this._selectedItem = item;
-          this.autocompleteInput.nativeElement.value = this._selectedItem[this.configuration.value];
+          if(this.autocompleteInput !== undefined) { 
+            this.autocompleteInput.nativeElement.value = this._selectedItem[this.configuration.value];
+          } 
         }
       });
     }

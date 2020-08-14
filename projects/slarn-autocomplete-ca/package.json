@@ -1,6 +1,6 @@
 {
   "name": "@cgasis/slarn-autocomplete-ca",
-  "version": "0.0.4",
+  "version": "0.0.8",
   "peerDependencies": {
     "@angular/common": "^9.0.7",
     "@angular/core": "^9.0.7",

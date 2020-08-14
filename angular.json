@@ -82,6 +82,46 @@
           }
         }
       }
+    },
+    "angular9-signaturepad": {
+      "projectType": "library",
+      "root": "projects/angular9-signaturepad",
+      "sourceRoot": "projects/angular9-signaturepad/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/angular9-signaturepad/tsconfig.lib.json",
+            "project": "projects/angular9-signaturepad/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/angular9-signaturepad/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/angular9-signaturepad/src/test.ts",
+            "tsConfig": "projects/angular9-signaturepad/tsconfig.spec.json",
+            "karmaConfig": "projects/angular9-signaturepad/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/angular9-signaturepad/tsconfig.lib.json",
+              "projects/angular9-signaturepad/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "my-lib"
 }
