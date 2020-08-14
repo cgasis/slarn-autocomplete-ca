@@ -1,0 +1,26 @@
+{
+  "name": "@cgasis/slarn-autocomplete-ca",
+  "version": "0.0.4",
+  "peerDependencies": {
+    "@angular/common": "^9.0.7",
+    "@angular/core": "^9.0.7",
+    "tslib": "^1.10.0"
+  },
+  "description": "An angular package for a very simple yet powerfull autocomplete component",
+  "main": "karma.conf.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cgasis/slarn-autocomplete-ca.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "keywords": [
+    "angular",
+    "autocomplete"
+  ],
+  "author": "Chris Asis <cgasis@gmail.com>"
+}

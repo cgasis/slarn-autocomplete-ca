@@ -1,0 +1,120 @@
+.slarn-autocomplete-container {
+  padding-top: 0;
+  margin: 0;
+  position: relative;
+}
+
+.slarn-autocomplete-container .curtan{
+  position: absolute;
+  background: rgba(255, 255, 255, 0.47);
+  width: 100%;
+  z-index: 1;
+  left: -0.5px;
+  height: 100%;
+  cursor: not-allowed;
+}
+
+*.unselectable-text {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+
+  /*
+    Introduced in IE 10.
+    See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+  */
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container-rtl-direction{
+  padding-left: 15px;
+  padding-right: 3px;
+  direction: rtl;
+}
+
+.container-ltr-direction{
+  padding-left: 3px;
+  padding-right: 15px;
+}
+
+.slarn-autocomplete-container select {
+  display: none;
+}
+
+.slarn-autocomplete-container input {
+  margin-bottom: 1px;
+  display: table-cell;
+  width: 10px;
+  box-sizing: border-box;
+  border: none;
+  min-height: 28px;
+  background-color: transparent;
+}
+
+.slarn-autocomplete-container input:focus {
+  outline: none;
+}
+
+.slarn-autocomplete-container .selected-options {
+  font-size: 14px;
+  margin-bottom: 3px;
+  display: inline-block;
+}
+
+.selected-options-rtl{
+  margin-left: 5px;
+}
+
+.selected-options-ltr{
+  margin-right: 5px;
+}
+
+.slarn-autocomplete-container .selected-options .text {
+  padding: 2px;
+  cursor: default;
+}
+
+.slarn-autocomplete-container .selected-options .remove {
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+  cursor: pointer;
+  padding-left: 10px;
+  padding-right: 3px;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAW0lEQVR4AWMYWUCAGmr4gfgeEPfjUdMPVcNPyLB2IP6Pw7B+qFw7bu2ENbSji5FqWAMQN8JdSSaYBjKAIkMQrkIYRKkhjQS9RnlgUx79jdRMkLzUyCKCDCMHAABoYiU8YS3zcAAAAABJRU5ErkJggg==');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+}
+
+.slarn-autocomplete-container .suggestions {
+  position: absolute;
+  width: 100%;
+  background: white;
+  z-index: 2;
+  display: block;
+  max-height: 200px;
+  overflow-y: auto;
+  left: -1px;
+}
+
+.slarn-autocomplete-container .no-match-found, .loading-data {
+  padding: 5px;
+}
+
+.slarn-autocomplete-container .toggle-suggestions-display {
+  position: absolute;
+  /*right: 0;*/
+  /* height: 93%; */
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADdcAAA3XAUIom3gAAAAHdElNRQfiBwcLEx22EzYqAAAAW0lEQVQoz2NgGAyAm2EFgxBWGRGG1QysTAxfGZ4z7MGiRIRhH8Mdht8QTj/DOTQlwgwXGdqRBVCVCDNcQJVGVSLEcB5TGqEEpzRMyTnc0gwMDAytDPV0DWSiAAC0ghX2P8wBMwAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxOC0wNy0wN1QxMToxOToyOSswMjowMHRLTC0AAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTgtMDctMDdUMTE6MTk6MjkrMDI6MDAFFvSRAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAABJRU5ErkJggg==');
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
+  width: 30px;
+  background-color: transparent;
+}
+
+.slarn-autocomplete-container .toggle-suggestions-display:hover {
+  background-color: #ececec;
+}
