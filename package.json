@@ -1,0 +1,21 @@
+{
+  "name": "slarn-autocomplete-ca",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^9.0.7",
+    "@angular/core": "^9.0.7"
+  },
+  "main": "bundles/slarn-autocomplete-ca.umd.js",
+  "module": "fesm5/slarn-autocomplete-ca.js",
+  "es2015": "fesm2015/slarn-autocomplete-ca.js",
+  "esm5": "esm5/slarn-autocomplete-ca.js",
+  "esm2015": "esm2015/slarn-autocomplete-ca.js",
+  "fesm5": "fesm5/slarn-autocomplete-ca.js",
+  "fesm2015": "fesm2015/slarn-autocomplete-ca.js",
+  "typings": "slarn-autocomplete-ca.d.ts",
+  "metadata": "slarn-autocomplete-ca.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.10.0"
+  }
+}
